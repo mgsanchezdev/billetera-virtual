@@ -5,7 +5,8 @@ import './header.css';
 export const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Billetera virtual</Navbar.Brand>
+      <Navbar.Brand href="#">Billetera virtual</Navbar.Brand>
+      <Navbar.Brand href="#">Bienvenido Juan Perez</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
@@ -33,7 +34,11 @@ export const Header = () => {
         </Nav>
         <Col className="menu_login">
           <Nav>
-            <Nav.Link href="/login">Iniciar Sesión</Nav.Link>
+            <Nav.Link eventKey={2} href="#">
+              <Link to="/login">
+                <Button className="btn_crear_cuenta"> Iniciar Sesión</Button>
+              </Link>
+            </Nav.Link>
             <Nav.Link eventKey={2} href="#">
               <Link to="/register">
                 <Button className="btn_crear_cuenta"> Crear Cuenta</Button>

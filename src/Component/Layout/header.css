@@ -12,12 +12,7 @@
 .btn_crear_cuenta:hover {
   background-color: #d15c21;
 }
-/*.bg-navbar {
-  /* background-color: rgba(160, 36, 36, 0.1);*/
-/* color: white;*/
-/*}
-/*
-.text-dark {
-  color: black !important;
+
+.btn_heacer_componet {
+  width: 150px;
 }
-*/

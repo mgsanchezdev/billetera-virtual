@@ -1,0 +1,10 @@
+/*Comun a todos los componentes*/
+.imagen_fondo {
+  height: 92vh;
+}
+
+/*Componente Saldo*/
+.header_saldo {
+  margin-top: 350px;
+  text-align: center;
+}
