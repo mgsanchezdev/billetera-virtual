@@ -12,17 +12,34 @@ export const HeaderRegister = () => {
           <Nav>
             <Nav.Link eventKey={2} href="#">
               <Link to="/compra">
-                <Button className="btn_crear_cuenta"> Hacer compra</Button>
+                <Button className="btn_crear_cuenta btn_header_component">
+                  {' '}
+                  Hacer compra
+                </Button>
               </Link>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#">
               <Link to="/saldo">
-                <Button className="btn_crear_cuenta"> Consultar saldo</Button>
+                <Button className="btn_crear_cuenta btn_header_component">
+                  {' '}
+                  Consultar saldo
+                </Button>
               </Link>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#">
               <Link to="/dinero">
-                <Button className="btn_crear_cuenta"> Cargar dinero</Button>
+                <Button className="btn_crear_cuenta btn_header_component">
+                  {' '}
+                  Cargar dinero
+                </Button>
+              </Link>
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="#">
+              <Link to="/">
+                <Button className="btn_crear_cuenta btn_header_component">
+                  {' '}
+                  Salir
+                </Button>
               </Link>
             </Nav.Link>
           </Nav>
