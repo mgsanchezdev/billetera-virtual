@@ -1,0 +1,23 @@
+.menu_login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn_crear_cuenta {
+  background-color: #fc5a08;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.btn_crear_cuenta:hover {
+  background-color: #d15c21;
+}
+/*.bg-navbar {
+  /* background-color: rgba(160, 36, 36, 0.1);*/
+/* color: white;*/
+/*}
+/*
+.text-dark {
+  color: black !important;
+}
+*/

@@ -1,0 +1,29 @@
+.form-login,
+.link-register {
+  display: flex;
+  justify-content: center;
+}
+
+.login-margin-top {
+  margin-top: 250px;
+}
+
+.input-width {
+  width: 500px;
+}
+.bt-login {
+  margin-top: 10px;
+  width: 500px;
+  font-weight: bold;
+}
+.container-link-register {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.link-register:hover {
+  font-size: 25px;
+  color: rgb(36, 23, 153);
+  text-decoration: none;
+}
