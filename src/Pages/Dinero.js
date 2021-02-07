@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { HeaderComponent } from '../Component/Layout/HeaderComponent';
 import axios from 'axios';
@@ -6,10 +5,12 @@ import Swal from 'sweetalert2';
 import '../Pages/Login/login.css';
 
 export const Dinero = () => {
-  let extraida = '';
-
   const handlerCargaSaldo = async (e) => {
     e.preventDefault();
+    let mensaje = '';
+    let dataString = '';
+    let indiceInicio = 0;
+    let indiceFin = 0;
     const [documento, celular, saldo] = e.target;
 
     let xmls = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.soap.com/">
@@ -34,11 +35,11 @@ export const Dinero = () => {
         }
       )
       .then((res) => {
-        let dataString = JSON.stringify(res.data);
-        let indice = dataString.indexOf('<return>');
-        let indicefin = dataString.indexOf('</return>');
-        extraida = dataString.substring(indice + 8, indicefin);
-        Swal.fire('', `${extraida}`, 'success');
+        dataString = JSON.stringify(res.data);
+        indiceInicio = dataString.indexOf('<return>');
+        indiceFin = dataString.indexOf('</return>');
+        mensaje = dataString.substring(indiceInicio + 8, indiceFin);
+        Swal.fire('', `${mensaje}`, 'success');
       })
       .catch((err) => {
         console.log(err);
@@ -60,7 +61,7 @@ export const Dinero = () => {
           </Form.Group>
           <Form.Group controlId="formBasicEmail" className=" input-width">
             <Form.Label>Ingrese el numero de celular </Form.Label>
-            <Form.Control type="text" placeholder="1200" />
+            <Form.Control type="text" placeholder="55454545" />
           </Form.Group>
           <Form.Group controlId="formBasicEmail" className=" input-width">
             <Form.Label>

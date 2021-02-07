@@ -50,7 +50,7 @@ const Register = () => {
         let dataString = JSON.stringify(res.data);
         let indice = dataString.indexOf('<return>');
         let indicefin = dataString.indexOf('</return>');
-        let extraida = dataString.substring(indice + 8, indicefin);
+        let mensaje = dataString.substring(indice + 8, indicefin);
       })
       .catch((err) => {
         console.log(err);

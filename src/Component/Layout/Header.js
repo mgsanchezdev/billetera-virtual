@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand href="#">Billetera virtual</Navbar.Brand>
-      <Navbar.Brand href="#">Bienvenido Juan Perez</Navbar.Brand>
+      <Navbar.Brand href="#">Bienvenido</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
